@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #9ac5fd;
+
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+
+}
+.main .drag-zone{
+    border: 2px dashed #fff;
+    height: 300px;
+    width: 1000px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.drag-zone.active {
+    border: 2px solid rgb(29, 28, 28);
+}
+.drag-area .icon {
+font-size: 100px;
+color: #fff;
+display: flex;
+justify-content: center;
+
+}
+
+.drag-area span {
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+
+
+    
+
+}
+
+button {
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+    background: rgb(0, 0, 0);
+    color: #9ac5fd;
+    border-radius: 5px;
+    
+    position:fixed;
+
+    bottom:30%;
+    left: 44%;
+    right: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+
+}
+.dbtn {
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+
+    background: rgb(0, 0, 0);
+    color: #9ac5fd;
+    border-radius: 5px;
+    
+    position:fixed;
+
+    bottom:85%;
+    left: 45%;
+    right: 0;
+    width: 8em;
+    margin-top: -2.5em;
+}
+
+.drag-area img {
+    
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.viewer{
+    width: 100%;
+    height: 100%;
+   
+    
+    
+}
+.pdf-page-canvas {
+    display: block;
+    margin: 5px auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+  }
+
+
+#id{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nextbtn{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+
+    background: rgb(0, 0, 0);
+    color: #9ac5fd;
+    border-radius: 5px;
+    
+    position:fixed;
+
+    bottom:3%;
+    left: 45%;
+    right: 0;
+    width: 8em;
+    margin-top: -2.5em;
+}
+#imagebtn{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+
+    background: rgb(0, 0, 0);
+    color: #9ac5fd;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0,5s;
+}
+.bg-active{
+    visibility:visible;
+    opacity:1;
+}
+.modal{
+    position: relative;
+    font-family: sans-serif;
+    background-color: white;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.modal button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+
+    background: rgb(0, 0, 0);
+    color: #9ac5fd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal-close{
+    position: absolute;
+    font-family: bold;
+    left: 80%;
+    right: 0;
+    width: 8em;
+    margin-top: -2.5em;
+    background: #fff;
+    bottom:85%;
+  
+
+
+}
+.addbtn{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+
+    background: rgb(0, 0, 0);
+    color: #9ac5fd;
+    border-radius: 5px;
+    
+    position:fixed;
+    bottom:18%;
+
+    left: 45%;
+    right: 0;
+    width: 8em;
+    margin-top: -2.5em;
+
+}
+
+
+.download{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+
+    background: rgb(0, 0, 0);
+    color: #9ac5fd;
+    border-radius: 5px;
+    
+    position:fixed;
+    bottom:84%;
+
+    left: 45%;
+    right: 0;
+    width: 8em;
+    margin-top: -2.5em;
+
+}
+
+.mainElement{
+    background: #9ac5fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.subElement{
+    background: #9ac5fd;
+
+}
+#imgsrc {
+    display: block;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    
+}
